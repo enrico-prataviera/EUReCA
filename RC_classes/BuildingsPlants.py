@@ -54,6 +54,9 @@ class Plants():
         solvePlant
     '''
     
+    
+    
+    
     def __init__(self,H_plant_type,C_plant_type,l,ts):
         '''
         Initializes an Plant object

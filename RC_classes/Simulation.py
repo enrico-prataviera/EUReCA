@@ -544,7 +544,7 @@ class Sim():
                 
         self.times['Surfaces correction and urban shading'] = end - start
         
-        print('Surfaces correction and Shading effect TOT:   ', end - start)
+        print('Surfaces correction and \nShading effect TOT:   ', end - start)
         
         
     def buildings_params_and_loads(self):
@@ -589,7 +589,7 @@ class Sim():
                 
         self.times['urban canopy'] = end - start
         
-        print('Canopy creation:   ', end - start)
+        print('Canopy creation:      ', end - start)
    
     def plants_design_and_creation(self):
         '''
@@ -674,7 +674,7 @@ class Sim():
                     'TotOpaquaA','TotWinA','TotUA',
                     'ExtWallU','RoofU','GroundU','WinU',
                     'Htr_is','Htr_w','Htr_ms','Htr_em','Cm',
-                    'RrestAW','R1AW','RalphaStarAW','RalphsStarIL','RaplphaStarIW','R1IW','C1AW','C1IW']
+                    'RrestAW','R1AW','RalphaStarAW','RalphaStarIL','RalphaStarIW','R1IW','C1AW','C1IW']
         
         BuiInfo = pd.DataFrame(index = self.city.buildings.keys() ,columns = Col_Bui)
         
